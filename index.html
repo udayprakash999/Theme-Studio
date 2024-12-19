@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Theme</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="css-coding.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+
+        <div class="main-content">
+            <div class="theme-selector">
+                <h3>Choose a Theme</h3>
+                <div class="theme-options">
+                    <select id="theme-dropdown">
+                        <option value="theme1">Sunset</option>
+                        <option value="theme2">Ocean</option>
+                        <option value="theme3">Forest</option>
+                        <option value="theme4">Desert</option>
+                        <option value="theme5">Galaxy</option>
+                        <option value="theme6">Mint</option>
+                        <option value="theme7">Sunrise</option>
+                        <option value="theme8">Night Sky</option>
+                        <option value="theme9">Lavender</option>
+                        <option value="theme10">Peach</option>
+                        <option value="theme11">Emerald</option>
+                    </select>
+                    <button id="apply-btn" onclick="applyTheme()">Apply Theme</button>
+                </div>
+            </div>
+    
+            <!-- Font Style Selector -->
+            <div class="font-style-selector">
+                <h3>Choose a Font Style</h3>
+                <div class="font-options">
+                    <select id="font-style-dropdown">
+                        <option value="Arial, sans-serif">Arial</option>
+                        <option value="'Courier New', Courier, monospace">Courier New</option>
+                        <option value="'Georgia', serif">Georgia</option>
+                        <option value="'Times New Roman', Times, serif">Times New Roman</option>
+                        <option value="'Verdana', sans-serif">Verdana</option>
+                        <option value="'Roboto', sans-serif">Roboto</option>
+                        <option value="'Montserrat', sans-serif">Montserrat</option>
+                    </select>
+                    <button id="apply-font-btn" onclick="applyFontStyle()">Apply Font</button>
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="container">
+            <h1 id="main-heading">Customize Your Theme</h1> <br>
+            <h4 id="secondary-heading">This Background Color Can Be Changed</h4>
+            <br>
+            <p id="content" style="text-align: center;">
+               <br>Choose any of the themes to change the look and feel of this page. 
+            </p> <br>
+            <button id="btn" onclick="changeBg()">Change BG</button>
+
+            <div class="copy-css">
+                <h3>Copy Current CSS </h3>
+                <textarea id="css-output" readonly></textarea>
+                <button id="copy-btn" onclick="copyCSS()">Copy CSS</button>
+
+
+<div id="popup" class="popup">
+    <p>CSS copied to clipboard!</p>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
